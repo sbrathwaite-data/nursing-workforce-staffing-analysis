@@ -47,4 +47,3 @@ Staffing components were validated across all **1,303,830 records with 0 mismatc
 - SQL analysis
 - Results summary
 - Findings & interpretation
-- Cleaned analytical data
