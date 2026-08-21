@@ -7,18 +7,7 @@
 -- Query 01: Raw Data Validation
 -- ============================================================================
 SELECT
-  PROVNUM,
-  WorkDate,
-  COUNT(*) AS record_count
-FROM
-  `projectblue-500000.healthcare_workforce_analysis.pbj_daily_nurse_staffing_raw`
-GROUP BY
-  PROVNUM,
-  WorkDate
-HAVING
-  COUNT(*) > 1
-ORDER BY
-  record_count DESC;
+  COUNT(*) AS total_raw_rows
 FROM
   `projectblue-500000.healthcare_workforce_analysis.pbj_daily_nurse_staffing_raw`;
 
